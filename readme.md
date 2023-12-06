@@ -1,7 +1,7 @@
 Client-Side Programming / Programming: OO Approach
 Continuous Assessment 3 (CA3)
 
-First CA3 already lost, because when I see VS Code showed to "The git repository at '/Users/awa' has too many active changes, only a subset of Git features will be enabled." then I delete all, and after I lost all my laptop files and I can't use my laptop. 
+First CA3 was already lost, because when I saw VS Code showed "The git repository at '/Users/awa' has too many active changes, only a subset of Git features will be enabled." then I deleted all, and after I lost all my laptop files and I can't use my laptop. 
 
 That was terrible! I didn't recuva files recovery...  
 
@@ -17,9 +17,9 @@ CSS and JavaScript.
 
 
 Page 1
-For this page, you are going to create a web application for a restaurant to calculate the cost of atleast 5 customer orders.
+For this page, you are going to create a web application for a restaurant to calculate the cost of at least 5 customer orders.
 
-1. Staff password validator: c reate a password validator, which tests whether or not the staff’s desired password is strong enough. The criteria which must be met in order for a password to be strong enough are as follows:
+1. Staff password validator: c Create a password validator, which tests whether or not the staff’s desired password is strong enough. The criteria which must be met for a password to be strong enough are as follows:
 
 a. The password must have at least one lowercase letter.
 
@@ -30,10 +30,10 @@ c. It must contain one digit and one special character.
 d. And it must be at least eight characters long.
 
 
-2. User generation: you are required to create at least 5 randomly generated user profiles for the customers using JSON data returned from the random user API. You can use the random user API, https://randomuser.me/ to get data for the customers. Your solution should dynamically generate image thumbnails for the customers.
+2. User generation: you are required to create at least 5 randomly generated user profiles for the customers using JSON data returned from the random user API. You can use the random user API, https://randomuser.me/ to get customer data. Your solution should dynamically generate image thumbnails for the customers.
 
 
-3. Food cost: the application should include a form that will allow the waiter to choose from a range of available menu items. The menu should include starters, main, dessert and drinks. There should be a minimum of 3 items in each category (i.e. 3 starters, 3 mains, etc.). Some of the guests may be vegetarian, so the starters and mains should contain at least 1 vegetarian menu item. Each menu item is an object containing: t he dish name , a short (1 line) description, a suitable variable that indicates whether the dish is vegetarian, and t he cost of the dish . A breakdown of the bill will be returned to the user
+3. Food cost: the application should include a form that will allow the waiter to choose from a range of available menu items. The menu should include starters, main, dessert and drinks. There should be a minimum of 3 items in each category (i.e. 3 starters, 3 mains, etc.). Some of the guests may be vegetarian, so the starters and mains should contain at least 1 vegetarian menu item. Each menu item is an object containing: the dish name, a short (1 line) description, a suitable variable that indicates whether the dish is vegetarian, and the cost of the dish. A breakdown of the bill will be returned to the user
 showing:
 
 a. the overall bill
@@ -47,5 +47,10 @@ non-vegetarian meals–this only needs to be calculated on the starters and main
 
 Page 2:
 
-For this page, you are required to research and develop interactive components on this page to showcase your knowledge of JavaScript and demonstrate your ability to integrate a ny third party library and/or frameworks. There is no restriction as to how many Javascripts features you can use here, except that this page should include something that is related to page 1, for example,
+For this page, you must research and develop interactive components to showcase your knowledge of JavaScript and demonstrate your ability to integrate any third-party library and frameworks. There is no restriction as to how many Javascript features you can use here, except that this page should include something that is related to page 1, for example,
 related to food, restaurants, or the country from which you have chosen the cuisine. The purpose of this page is for you to showcase your ability with Javascript and a framework.
+
+
+![image](https://github.com/Awa25/CliprogCA3/blob/main/image/clip01.png?raw=true)
+
+![image](https://github.com/Awa25/CliprogCA3/blob/main/image/clip02.png?raw=true)
