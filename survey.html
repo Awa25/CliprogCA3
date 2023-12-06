@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awa2020044CA3</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/survey.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- My JavaScript -->
+    <script src="js/survey.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Top Navigation Bar --->
+        <div class="navBar">
+            <div class="navTitle">
+                <div class="logo" title="Logo"></div>
+                <h2>Restaurant Order System</h2>
+            </div>
+            <ul class="navbarUI">
+                <li>
+                    <a href="index.html" title="Home">Home</a>
+                </li>
+                <li>
+                    <a class="active" href="#" title="Service Survey">Service Survey</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Banner --->
+        <div class="bannerSurvey">
+            <div class="bannerSurveyFontBox">
+                <h1>Customer Satisfaction Surfey</h1>
+                <p>Please take a few minutes to fill out our survey.</p>
+                <p>Your feedback is really important so that we can improve our services and the way we communicate.</p>
+            </div>
+            <div class="bannerSurveyImgBox">
+                <div class="bannerSurveyImg"></div>
+            </div>
+        </div>
+
+        <!-- Form --->
+        <form class="formBox" name="surveyForm" onsubmit="return validateForm()" action="http://example.com/script.php"
+        method="POST" target="hidden-form">
+            
+            <h2>Please Check One</h2>
+
+            <div class="row">
+                <label>1. The accuracy of your order. <i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="accuracyOrder[]" value="Satisfied"> Satisfied</label>
+                    <label><input type="checkbox" name="accuracyOrder[]" value="Neither"> Neither Satisfied nor Dissatisfied</label>
+                    <label><input type="checkbox" name="accuracyOrder[]" value="Dissatisfied"> Dissatisfied</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>2. Taste / flavor of the Starter. <i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="starter[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="starter[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="starter[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>3. Taste / flavor of the Main. <i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="main[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="main[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="main[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>4. Taste / flavor of the Dessert. <i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="dessert[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="dessert[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="dessert[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>6. Taste / flavor of the Drinks. <i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="drinks[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="drinks[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="drinks[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>7. The appearance of the food.<i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="food[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="food[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="food[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>8. Portion size.<i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="portion[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="portion[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="portion[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>9. Server's attitude.<i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="server[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="server[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="server[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>10. Value of the meal.<i>(Optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="value[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="value[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="value[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row userInfo">
+                <label>Name</label>
+                <input type="text" name="name">
+                <div class="error" id="nameErr"></div>
+            </div>
+
+            <div class="row">
+                <label>Email</label>
+                <input type="text" name="email">
+                <div class="error" id="emailErr"></div>
+            </div>
+
+            <div class="row">
+                <label>Mobile Number</label>
+                <input type="text" name="mobile" maxlength="10">
+                <div class="error" id="mobileErr"></div>
+            </div>
+            
+            <div class="row">
+                <label>Gender</label>
+                <div class="form-inline">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+                <div class="error" id="genderErr"></div>
+            </div>
+
+            <div class="row">
+                <label for="desc">Do you have any suggestion?</label>
+                <div class="form-inline">
+                <textarea name="desc"></textarea>
+                </div>
+            </div>
+           
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <IFRAME style="display:none" name="hidden-form"></IFRAME>
+
+        <!-- Footer --->
+        <div id="footer">
+            <ul>
+                <li>Copyright © 2021 Awa. All rights reserved.</li>
+                <li>GitHub Link: <a href="https://awa555.github.io/Class_ClilentSideProgramming.github.io/CA3/" title="GitHub" target="_blank">https://awa555.github.io/Class_ClilentSideProgramming.github.io/CA3/</a></li>
+                <li>GitHub Commits: <a href="https://github.com/Awa555/Class_ClilentSideProgramming.github.io/commits/main/CA3" title="GitHub" target="_blank">https://github.com/Awa555/Class_ClilentSideProgramming.github.io/commits/main/CA3</a></li>
+            </ul>
+        </div>
+
+        <!-- Go to top --->
+        <p id="back-to-top"><a href="#top"><span></span></a></p>
+    </div>
+
+</body>
+
+</html>

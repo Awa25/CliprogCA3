@@ -1,0 +1,635 @@
+body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fefbee;
+}
+
+#wrapper {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* -- Top Navigation Bar -- */
+.navBar {
+    background-color: #fefbee;
+    padding: 0em 0.8em 0em 1.6em;
+    overflow: hidden;
+    position: relative;
+}
+
+.navTitle {    
+    width: 50%;
+    float: left;
+    display:flex;
+    align-items:center;  
+}
+
+.logo {
+    background-image: url(../image/logo.png);
+    width: 45px;
+    height: 45px;
+}
+
+h2 {
+    color: #37302d;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    transform: scale(1,0.9);
+    letter-spacing: -1.5px;
+    padding-left: 0.6rem;
+}
+
+.navbarUI {    
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    list-style: none;
+    justify-content:space-between; 
+    float: right; 
+    padding-top: 0.7rem;
+}
+
+.navbarUI li {
+    padding: 0 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: #37302d;
+    transform: scale(1,0.9);
+    letter-spacing: -1px;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+}
+
+.navbarUI li a {
+    color:#37302d; 
+    text-decoration:none;
+}
+
+.navbarUI li a:hover {
+    color: rgb(125, 125, 125);
+}
+
+.navbarUI li a.active {
+    color: #df613a;
+}
+
+
+
+/* -- Banner -- */
+.banner {
+    background-image: url(../image/img02.jpg);
+    background-repeat: repeat-x;
+    position: relative;
+    height: 201px;
+}
+
+.bannerImg {
+    padding: 0.2em 3em 1em 1.8em;
+    background-image: url(../image/img01.jpg);
+    background-repeat: no-repeat;
+    height: 201px;
+}
+
+.banner h2 {
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    transform: scale(1,0.9);
+    letter-spacing: -1.5px;
+    margin-top: 4.5rem;
+    float: right;
+}
+
+
+
+/* -- StaffPassword Box -- */
+.staffBox {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.stffBoxIN {
+    margin: 0 auto;
+}
+
+.staffBoxFontBox {
+    padding-left: 2rem;
+    color: #37302d;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: scale(1,0.9);
+    letter-spacing: -1px;
+}
+
+.staffBoxFontBox ul {
+    list-style: none;
+    margin-left: -2.4em;
+}
+
+.staffBoxFontBox ul li {
+    padding-bottom: 0.5em; 
+    font-size: 15px; 
+}
+
+.staffBoxFontBox span {
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+input {
+    padding: 0.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    box-shadow: gray 0.5px 0.5px 1px;
+}
+
+input[type="submit"] {
+    padding: 7.5px 15px;
+    background: #df613a;
+    cursor: pointer;
+    border-radius: 0.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px rgb(80, 80, 80);
+    color: white;
+    font-size: 14px;
+}
+
+input:hover[type="submit"] {
+    padding: 7.5px 15px;
+    background: #eb6f49;
+    cursor: pointer;
+    border-radius: 0.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px rgb(80, 80, 80);
+    color: white;
+    font-size: 14px;
+}
+
+
+
+/* -- Customer -- */
+.userBox {
+    position: relative;
+    padding: 1rem 0 0 0.5em;
+}
+
+.userBox a {
+    background-color: #df613a;
+    color: white;
+    padding: 0.8em 1.2em;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 0.5rem;
+    box-shadow: gray 1px 1px 2px;
+    text-shadow: 1px 1px 1px rgb(80, 80, 80);
+    margin-left: 1.5rem;
+    font-size: 17px;
+}
+
+.userBox a:hover {
+    background: #cf5e3b;
+}
+
+.profileBox {
+    margin: 1.5rem 2rem 2rem 1rem;  
+}
+
+.profile-out {
+    max-width: 100%;
+    text-align: center;    
+}
+
+.profile-in {  
+    color: black;
+    border-radius: 1em;
+}
+  
+.profile {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-photo { 
+    border-radius: 50%;
+    border: rgba(255, 255, 255, 0.434) 1px solid;
+    margin: auto;
+    align-items: center;
+}
+  
+.eachUser p{
+    font-size: 12px;
+    text-align: left;
+}
+
+.eachUser {
+    border: solid 1px #c7c6c6a3;
+    border-radius: 0.5em;
+    background-color: #eeead9;
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 200px;
+    letter-spacing: -0.6px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.eachUser span {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: left;
+    padding-top: 2rem;
+}
+
+
+
+
+/* -- Footer -- */
+#footer {
+    position: absolute;
+    background-color: #807c5e;
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+#footer ul {
+    margin-top: 0.4rem;
+}
+
+#footer ul li {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: scale(1,0.9);
+    color: white;
+    text-align: center;
+    line-height: 1.3rem;
+    font-size: 12px;
+    list-style: none;
+}
+
+#footer ul li a {
+    color: white;
+}
+
+#footer ul li a:hover {
+    color: black;
+}
+
+
+
+
+/* -- Menu Navigation -- */
+.menuBox {
+    margin: 0 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.menuNav {
+    padding-bottom: 1rem;    
+    list-style: none;
+    margin-bottom: 4rem;
+    margin-left: -1.8rem;
+}
+
+.menuNav li {
+    float: left;
+    border-radius: 0.3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -0.5px;
+    border-radius: 0.3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 16px;
+    padding:15px;
+    background-color:#d6d1a6;
+    color: black;
+}
+
+.menuNav li:hover {
+    cursor: pointer;
+    background-color: #807c5e;
+}
+
+.menuNav li.active {
+    background-color:#807c5e;
+    color: white;
+}
+
+.menuNav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuNav li.active{
+    color: white;
+}
+
+.menuNav li.active a {
+    background-color:#807c5e;
+    color: white;
+}
+
+
+
+
+/* -- Menu Content -- */
+.menuContentBox {
+    margin: 0;
+}
+
+.menuContent {
+    display: flex;
+}
+  
+.content {   
+    display: none;    
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.content.active {
+    display: block;
+}
+
+.content ul {
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 -1.8rem;
+}
+
+.content ul li {
+    padding: 0.7rem;
+    width: 180px;
+    background-color: white;
+    border: solid 1px #979797;
+    margin-right: 1.5rem;
+    color: black;
+}
+
+.contentImg {
+    margin-bottom: 0.7rem;
+}
+
+.spanName {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.p1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-bottom: 5rem;
+    color: rgb(80, 80, 80);
+}
+
+.p1Price {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+}
+
+.p1V {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+/* -- Select Quantity -- */
+.counter {
+    width: 180px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 1rem;
+}
+
+.add-cart {
+    width: 50px;
+    border: 0;
+    line-height: 35px;
+    font-size: 15px;
+    text-align: center;
+    background: #f0643a;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: gray 1px 1px 1px;
+    text-shadow: 1px 1px 1px rgb(99, 99, 99);
+}
+
+.add-cart:hover {
+    box-shadow: none;
+    background: #fa6e43;
+    text-shadow: none;
+}
+
+.counter span {
+    display: block;
+    font-size: 35px;
+    padding: 0 15px;
+    cursor: pointer;
+    color: #0052cc;
+    user-select: none;
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* -- Cart Bill -- */
+.products-container {
+    width: 700px;
+    justify-content: space-around;
+    margin-left: 0.7rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.products-container table {
+    padding: 0.5rem;
+}
+
+.product-header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #b6b6b6;
+}
+
+.product-header p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;    
+}
+
+.product-title {
+    padding-left: 1rem;
+    width: 52%;
+}
+
+.product-another {
+    width: 15%;
+    text-align: center;
+}
+
+.price {
+    width: 10%;
+    align-items: center;
+    text-align: right;
+    font-size: 13px;
+}
+
+.quantity {
+    width: 21%;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+}
+
+.quantity input {
+    width:25px;
+    text-align: center;
+    height: 15px;
+    margin: 0.3rem;
+}
+
+.product {
+    width: 53%;
+    justify-content: space-around;
+    float: left;
+    font-size: 13px;
+}
+
+.productList {
+    padding: 1rem;
+    height: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.productList-title {
+    font-size: 13px;
+    width: 56%;
+}
+
+/* .productList-another {
+    width: 15%;
+    text-align: center;
+    font-size: 13px;
+} */
+
+.total {
+    width: 10%;
+    font-size: 13px;
+    text-align: right;   
+}
+
+.totalPrice {
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 1rem 1.5rem 0 0;
+    float: right;
+}
+
+.totalPrice span {
+    padding-left: 1rem;
+    color: red;   
+}
+
+/* .billBox {
+    width: 250px;
+    float: right;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.billOthers {
+    font-size: 14px;
+    border-bottom: solid 1px lightgray;
+    padding: 0.5rem 0;
+} */
+
+.cancel {
+    background-color: red;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cancel-title {
+    width: 5%;
+}
+
+.productList button {
+    cursor: pointer;
+}
+
+.productList td {
+    border-bottom: solid 1px lightgray;
+}
+
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+/* -- Go to top -- */
+p#back-to-top{
+    position:fixed;
+    bottom:100px;
+    right:80px;
+}
+
+p#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    width:30px;
+}
+
+p#back-to-top a:hover{
+    color:#979797;
+}
+
+p#back-to-top a span{
+    background: url(../image/arrow_up.png) no-repeat center center;
+    border-radius:6px;
+    display:block;
+    height:30px;
+    width:30px;
+    margin-bottom:5px;
+}
+
+#back-to-top a:hover span{
+    background: url(../image/arrow_up.png) no-repeat center center;
+}
